@@ -1,0 +1,13 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Soyal",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  }
+}

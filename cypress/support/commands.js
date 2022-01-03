@@ -12,6 +12,16 @@
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
+
+Cypress.Commands.add('openMock', (matchUrl) => {
+  cy.intercept(matchUrl, (req) => {
+    req.reply({
+      code: 200,
+      data: 'success',
+    })
+  })
+})
+
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
